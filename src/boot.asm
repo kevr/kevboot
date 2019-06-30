@@ -8,7 +8,7 @@ org 0x7c00 ; start at 0x7c00, where boot sector is read from
 
 boot:
 	mov si,hello ; point si register to hello label memory location
-	mov ah,0x0e	 ; 0x0e means "Write Character in TTY mode"
+	mov ah,0x0e  ; 0x0e means "Write Character in TTY mode"
 
 .loop:
 	lodsb
